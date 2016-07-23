@@ -1,4 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element label="Communication Group" max_length="40" name="x_snc_student001_communication_group" type="collection"/>
+    <element attributes="live_feed=true" audit="true" label="Communication Group" max_length="40" name="x_snc_student001_communication_group" type="collection">
+        <element default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element label="Valid To:" max_length="40" name="u_glide_date_4" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" label="Type" max_length="40" name="u_string_1" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Description" max_length="1000" name="u_string_2" type="string"/>
+        <element label="Owner" max_length="32" name="u_type_owner" reference="sys_user" type="reference"/>
+        <index name="index">
+            <element name="u_type_owner"/>
+        </index>
+    </element>
 </database>

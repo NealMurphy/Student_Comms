@@ -3,8 +3,8 @@
     <sys_dictionary action="INSERT_OR_UPDATE" element="" table="x_snc_student001_communication_group">
         <active>true</active>
         <array>false</array>
-        <attributes/>
-        <audit>false</audit>
+        <attributes>live_feed=true</attributes>
+        <audit>true</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
 	// Add your code here
@@ -53,7 +53,7 @@
         <sys_created_on>2016-07-23 02:02:47</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>3e77ee9d4f7422006afb5f388310c712</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>x_snc_student001_communication_group</sys_name>
         <sys_package display_value="Student Communications" source="x_snc_student001">3d5f52594f7422006afb5f388310c759</sys_package>
         <sys_policy/>
@@ -61,7 +61,7 @@
         <sys_scope display_value="Student Communications">3d5f52594f7422006afb5f388310c759</sys_scope>
         <sys_update_name>sys_dictionary_x_snc_student001_communication_group_null</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2016-07-23 02:02:47</sys_updated_on>
+        <sys_updated_on>2016-07-23 02:30:27</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

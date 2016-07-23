@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_form_sections form_id="cd9ae6114fb422006afb5f388310c790" sys_domain="global" table="x_snc_student001_communication_group" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-07-23 02:16:19</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>459ae6114fb422006afb5f388310c791</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_student001_communication_group" name="x_snc_student001_communication_group" sys_domain="global" view="Default view">cd9ae6114fb422006afb5f388310c790</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_student001_communication_group" sys_domain="global" view="Default view">0bc86add4f7422006afb5f388310c7a1</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-07-23 02:16:19</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-07-23 02:16:19</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c59ae6114fb422006afb5f388310c791</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_student001_communication_group" name="x_snc_student001_communication_group" sys_domain="global" view="Default view">cd9ae6114fb422006afb5f388310c790</sys_ui_form>
+            <sys_ui_section caption="Activities" display_value="Activities" name="x_snc_student001_communication_group" sys_domain="global" view="Default view">499ae6114fb422006afb5f388310c790</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-07-23 02:16:19</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_snc_student001_communication_group</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-07-23 02:16:18</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>cd9ae6114fb422006afb5f388310c790</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_snc_student001_communication_group</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Student Communications" source="x_snc_student001">3d5f52594f7422006afb5f388310c759</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Student Communications">3d5f52594f7422006afb5f388310c759</sys_scope>
+            <sys_update_name>sys_ui_form_sections_cd9ae6114fb422006afb5f388310c790</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-07-23 02:16:18</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>
