@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Communication Channel" max_length="40" name="x_snc_student001_communication_channel" type="collection"/>
+</database>
