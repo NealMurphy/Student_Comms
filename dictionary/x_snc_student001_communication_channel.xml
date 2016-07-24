@@ -1,4 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element label="Communication Channel" max_length="40" name="x_snc_student001_communication_channel" type="collection"/>
+    <element audit="true" label="Communication Channel" max_length="40" name="x_snc_student001_communication_channel" type="collection">
+        <element label="Valid Until:" max_length="40" name="u_glide_date_3" type="glide_date"/>
+        <element attributes="no_sort=true,slushbucket_ref_no_expand=true" label="Valid for Types:" max_length="1024" name="u_glide_list_4" reference="x_snc_student001_communication_type" type="glide_list"/>
+        <element label="Major IT" max_length="32" name="u_reference_1" reference="sys_user_group" type="reference"/>
+        <element label="Owner" max_length="32" name="u_reference_2" reference="sys_user" type="reference"/>
+        <element label="Emergency / Critical" max_length="32" name="u_reference_3" reference="sys_user_group" type="reference"/>
+        <element label="Major Learning" max_length="32" name="u_reference_4" reference="sys_user_group" type="reference"/>
+        <element label="Major Campus" max_length="32" name="u_reference_5" reference="sys_user_group" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Name" max_length="120" name="u_string_1" type="string"/>
+        <index name="index">
+            <element name="u_reference_4"/>
+        </index>
+        <index name="index2">
+            <element name="u_reference_5"/>
+        </index>
+        <index name="index3">
+            <element name="u_reference_2"/>
+        </index>
+        <index name="index4">
+            <element name="u_reference_3"/>
+        </index>
+        <index name="index5">
+            <element name="u_reference_1"/>
+        </index>
+    </element>
 </database>

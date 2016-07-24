@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element audit="true" label="Communication Type" max_length="40" name="x_snc_student001_communication_type" type="collection">
+    <element attributes="live_feed=true" audit="true" label="Communication Type" max_length="40" name="x_snc_student001_communication_type" type="collection">
+        <element attributes="edge_encryption_enabled=true" choice="1" label="InScope" max_length="40" name="inscope" type="string">
+            <choice>
+                <element label="Yes" sequence="0" value="Yes"/>
+                <element label="No" sequence="1" value="No"/>
+            </choice>
+        </element>
+        <element default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
         <element attributes="edge_encryption_enabled=true" label="Description" max_length="1024" name="u_desc" type="string"/>
         <element label="Owner" max_length="32" name="u_owner" reference="sys_user" type="reference"/>
         <element label="Valid for Group:" max_length="32" name="u_reference_7" reference="x_snc_student001_communication_group" reference_qual="u_string_1ISNOTEMPTY^EQ" reference_qual_condition="u_string_1ISNOTEMPTY^EQ" type="reference"/>
@@ -9,6 +17,7 @@
         <element choice="1" label="Valid for Group:" mandatory="true" max_length="32" name="u_valid_grp" reference="x_snc_student001_communication_group" type="reference">
             <choice/>
         </element>
+        <element label="Valid for Group" max_length="32" name="valid_for_group" reference="x_snc_student001_communication_group" type="reference"/>
         <index name="index">
             <element name="u_owner"/>
         </index>
@@ -16,6 +25,9 @@
             <element name="u_valid_grp"/>
         </index>
         <index name="index3">
+            <element name="valid_for_group"/>
+        </index>
+        <index name="index4">
             <element name="u_reference_7"/>
         </index>
     </element>
