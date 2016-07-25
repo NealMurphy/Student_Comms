@@ -1,4 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element label="Communication Cohort" max_length="40" name="x_snc_student001_communication_cohort" type="collection"/>
+    <element attributes="live_feed=true" audit="true" label="Communication Cohort" max_length="40" name="x_snc_student001_communication_cohort" type="collection">
+        <element default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element label="Owner" max_length="32" name="u_reference_3" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Name" max_length="40" name="u_string_1" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Description" max_length="1024" name="u_string_2" type="string"/>
+        <index name="index">
+            <element name="u_reference_3"/>
+        </index>
+    </element>
 </database>
